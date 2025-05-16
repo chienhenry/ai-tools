@@ -1,0 +1,11 @@
+# 这个文件告诉Streamlit Cloud如何处理依赖
+# 指明使用特定的requirements文件
+--constraint requirements_streamlit.txt
+
+# 排除冲突依赖
+--no-deps jupyter-ai-magics
+--no-deps mysqlclient
+
+# 如果您需要使用langchain，请使用兼容的版本
+# 取消下面这行的注释以使用兼容版本
+# langchain==0.1.9 
